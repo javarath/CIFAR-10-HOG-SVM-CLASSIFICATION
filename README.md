@@ -70,15 +70,23 @@ Parallel computing is a technique that allows to execute multiple tasks simultan
 
 ## How to Run the pipe.joblib on One's Own System
 
-To run the `pipe.joblib` file on one's own system, follow these steps:
+To run the `pipe.joblib` file on your system, follow these steps:
 
-1. Download the `pipe.joblib` file from this repository and save it in a local directory.
-2. Install the dependencies listed in the requirements section using `pip install -r requirements.txt` or `conda install --file requirements.txt` depending on your package manager.
+1. Download the `pipe.joblib` file from the provided Google Drive link (https://drive.google.com/file/d/1SegqnYOH9XEF-BTPJ4cCHT5nq8GudPy6/view?usp=drive_link) and save it in a local directory.
+
+2. Install the required dependencies listed in the requirements section using `pip install -r requirements.txt` or `conda install --file requirements.txt` depending on your package manager.
+
 3. Load the `pipe.joblib` file using `pipe = joblib.load('pipe.joblib')`.
+
 4. Load some new data using `tensorflow.keras.datasets.cifar10.load_data()`. You can use the test data or any other data that matches the format and size of the CIFAR-10 dataset.
+
 5. Preprocess the data using the `HogTransform` function defined in the notebook. You can copy and paste the function definition from the notebook or import it from another module.
+
 6. Make predictions using the pipe using `y_pred = pipe.predict(x_new_hog)`.
+
 7. Find the score using the pipe using `score = pipe.score(x_new_hog, y_new)`.
+
+By following these steps, you can load the pre-trained `pipe.joblib` model and use it for making predictions or evaluating its performance on new data, after downloading the file from the provided Google Drive link.
 
 ## Acknowledgement
 
